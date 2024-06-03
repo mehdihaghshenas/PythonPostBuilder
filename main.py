@@ -50,16 +50,16 @@ for slide in slides_text:
     slides_images.append(img)
 
 slides_images[0].show()
-# slides_images[1].show()
-# slides_images[2].show()
-# slides_images[3].show()
-# slides_images[4].show()
+slides_images[1].show()
+slides_images[2].show()
+slides_images[3].show()
+slides_images[4].show()
 
 # Save images to files
-# slide_filenames = []
-# for i, img in enumerate(slides_images):
-#     filename = f"./images/slide_{i+1}.png"
-#     img.save(filename)
-#     slide_filenames.append(filename)
+slide_filenames = []
+for i, img in enumerate(slides_images):
+    filename = f"./images/slide_{i+1}.png"
+    img.save(filename)
+    slide_filenames.append(filename)
 
-# slide_filenames
+print(slide_filenames)
